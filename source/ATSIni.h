@@ -154,7 +154,7 @@ protected:
 		DATA.DIR = 0;
 		DATA.EBEnabled = 0;
 		DATA.WarningPattern = 0;
-		DATA.Version = _T("ver.3.00");
+		DATA.Version = _T("ver.3.10");
 	}
 };
 typedef ATSIni ATSFile; //êVãåå›ä∑

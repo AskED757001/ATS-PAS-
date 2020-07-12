@@ -106,7 +106,7 @@ ATS_HANDLES WINAPI atsElapse(ATS_VEHICLESTATE vs, int *p_panel, int *p_sound)
 	else
 		ret.Brake = BrakeNotch;
 
-	if (g_ini.DATA.DIR != 0 && !pilotlamp)
+	if (g_ini.DATA.DIR != 0 && !pilotlamp || P.EmrBrake || EB.EBBrake || P.SignalBrake)
 		ret.Power = 0;
 	else
 		ret.Power = PowerNotch;
